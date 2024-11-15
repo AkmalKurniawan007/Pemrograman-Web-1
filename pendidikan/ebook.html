@@ -1,0 +1,113 @@
+<html>
+<head>
+    <title>Ebook Nusantara</title>
+    <link rel="stylesheet" href="smp.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="ebook.png" alt="ebook">Ebook Nusantara
+        </div>
+        <nav>
+            <ul id="navList">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#Informasi">Informasi  Buku</a></li>
+                <li><a href="#Ebook">Ebook</a></li>
+                <li><a href="#photos">Foto Ebook</a></li>
+            </ul>
+            <button class="menu-icon" onclick="toggleMenu()">&#9776;</button>
+        </nav>
+    </header>
+    
+
+
+    <section id="home" class="hero-section">
+        <h1>Selamat Datang di Buku Digital Nusantara</h1>
+        <p>Disini tersedia berbagai mata pelajaran yang dapat Anda baca seperti Matematika, Kimia, Fisika, Biologi, Akuntansi, Bahasa Indonesia, Bahasa Inggris, dan Ekonomi.</p>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>Tentang Ebook Nusantara</h2>
+        <p>Ebook Nusantara menyediakan berbagai kategori e-book mulai dari sastra, sejarah, sains, hingga pengembangan diri. Kami mendukung penulis lokal untuk memperkenalkan budaya dan ilmu Nusantara.</p>
+
+        <h3>Visi Kami</h3>
+        <p>Menjadi pusat literatur digital terpercaya yang berfokus pada budaya Nusantara dan membantu meningkatkan literasi masyarakat.</p>
+
+        <h3>Misi Kami</h3>
+        <ul>
+            <li>Memperluas akses ke e-book berkualitas di Indonesia.</li>
+            <li>Mendukung penulis lokal untuk memperkenalkan budaya Nusantara.</li>
+            <li>Mengedukasi dan meningkatkan literasi digital di masyarakat.</li>
+        </ul>
+    </section>
+
+    <section id="Informasi" class="Informasi-section">
+        <h2>Informasi Buku</h2>
+        <div class="Informasi-card">
+            <h3>Perpustakaan Terbuka</h3>
+            <button onclick="bukaBuku('https://openlibrary.org')" class="btn">Buka Open Library</button>
+        <button onclick="bukaBuku('https://www.gutenberg.org')" class="btn">Buka Project Gutenberg</button>
+        <button onclick="bukaBuku('https://archive.org')"class="btn-secondary">Buka Internet Archive</button>
+        <button onclick="bukaBuku('https://www.scribd.com')"class="btn-secondary">Buka Scribd</button>
+    </div>
+        </div>
+        <div class="Informasi-card">
+            <h3>Prestasi Buku</h3>
+            <p>Deskripsi tentang prestasi buku yang tersedia.</p>
+        </div>
+    </section>
+
+    <section id="Ebook" class="Ebook-section">
+        <h2>Ebook</h2>
+        <div class="Ebook-grid">
+            <div class="Ebook-card">
+                <div class="Ebook-box">
+                    <img src="pelajaran.jpg" alt="Pelajaran">
+                </div>
+                <p>Buku Pelajaran</p>
+                <button onclick="bukaBuku('https://pendidikan.id/bse/')" class="btn-Ebook">Baca Lebih Banyak</button>
+            </div>
+            <div class="Ebook-card">
+                <div class="Ebook-box">
+                    <img src="novel.jpg" alt="Novel">
+                </div>
+                <p>Novel</p>
+                <button onclick="bukaBuku('https://openlibrary.org/')" class="btn-Ebook">Baca Lebih Banyak</button>
+            </div>
+            <div class="Ebook-card">
+                <div class="Ebook-box">
+                    <img src="majalah.jpg" alt="majalah">
+                </div>
+                <p>Majalah</p>
+                <button onclick="bukaBuku('https://www.ebookmagz.web.id/')" class="btn-Ebook">Baca Lebih Banyak</button>
+            </div>
+            <div class="Ebook-card">
+                <div class="Ebook-box">
+                    <img src="koran.jpg" alt="Koran">
+                </div>
+                <p>Koran</p>
+                <button onclick="bukaBuku('https://www.ebookmagz.web.id/')" class="btn-Ebook">Baca Lebih Banyak</button>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="photos" class="photos-section">
+        <h2>Foto Ebook</h2>
+        <div class="photo-gallery">
+            <img src="Operasi Jakarta.jpg" alt="Operasi Jakarta">
+            <img src="Buku Pintar Petualang Alam Liar.jpg" alt="Buku Pintar Petualang Alam Liar">
+            <img src="The Bitcoin Big Bang.jpg" alt="Bitcoin">
+        </div>
+        <button onclick="toggleDarkMode()" id="darkModeToggle" class="btn-drak">Mode Gelap</button>
+
+    </section>
+    <footer>
+        <p>&copy; Akmal Kurniawan - 23090071</p>
+        <p>Hubungi kami di: ebooknusantara@gmail.com</p>
+    </footer>
+
+    <script src="smp.js"></script>
+</body>
+</html>
