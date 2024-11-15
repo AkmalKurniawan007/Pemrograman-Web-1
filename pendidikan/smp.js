@@ -9,8 +9,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         document.querySelector(this.getAttribute("href")).scrollIntoView({
             behavior: "smooth"
         });
-
-        // Tutup menu setelah klik (untuk perangkat seluler)
+        
         const navList = document.getElementById("navList");
         if (navList.classList.contains("show")) {
             navList.classList.remove("show");
